@@ -1,7 +1,7 @@
 {
-  "name": "moises-auto-body-paint",
+  "name": "chava_example",
   "version": "1.0.0",
-  "description": "A static site for Moises Auto Body & Paint showcasing services, gallery, and contact information.",
+  "description": "A static site for chava_example.",
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",
@@ -16,7 +16,7 @@
     "static",
     "website"
   ],
-  "author": "Moises Auto Body & Paint",
+  "author": "chava_example",
   "license": "MIT",
   "dependencies": {
     "astro": "^2.0.0"
