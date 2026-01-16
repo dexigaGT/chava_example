@@ -1,6 +1,6 @@
 export default {
-  site: 'https://moisesautobodyandpaint.com',
-  base: '/',
+  site: 'https://dexigagt.github.io',
+  base: '/chava_example',
   output: 'static',
   integrations: [],
   markdown: {
