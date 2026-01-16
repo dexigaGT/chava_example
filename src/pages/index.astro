@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Moises Auto Body & Paint">
@@ -7,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="hero-content">
       <h1>Welcome to Moises Auto Body & Paint</h1>
       <p>Your one-stop shop for all auto body and paint needs.</p>
-      <a href="/contact" class="cta-button">Get a Free Estimate</a>
+      <a href={`${base}contact`} class="cta-button">Get a Free Estimate</a>
     </div>
   </header>
 
