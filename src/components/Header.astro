@@ -1,0 +1,81 @@
+---
+title: "Moises Auto Body & Paint"
+---
+
+<header>
+  <div class="top-bar">
+    <div class="contact-info">
+      <span>Location: 123 Main St, Anytown, USA</span>
+      <span>Contact: (123) 456-7890</span>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>
+        <a href="/services">Services</a>
+        <ul class="dropdown">
+          <li><a href="/services/paint-and-cosmetic/auto-painting">Auto Painting</a></li>
+          <li><a href="/services/paint-and-cosmetic/car-detailing">Car Detailing</a></li>
+          <li><a href="/services/paint-and-cosmetic/custom-paint">Custom Paint</a></li>
+          <li><a href="/services/paint-and-cosmetic/dent-removal">Dent Removal</a></li>
+          <li><a href="/services/paint-and-cosmetic/paintless-dent-removal">Paintless Dent Removal</a></li>
+          <li><a href="/services/paint-and-cosmetic/rust-removal">Rust Removal</a></li>
+          <li><a href="/services/collision-and-frame/bumper-repair">Bumper Repair</a></li>
+          <li><a href="/services/collision-and-frame/collision-repair">Collision Repair</a></li>
+          <li><a href="/services/collision-and-frame/frame-alignment">Frame Alignment</a></li>
+          <li><a href="/services/collision-and-frame/frame-straightening">Frame Straightening</a></li>
+        </ul>
+      </li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .top-bar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+  }
+  .contact-info span {
+    margin: 0 15px;
+  }
+  .main-nav {
+    background-color: #343a40;
+  }
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .main-nav li {
+    position: relative;
+  }
+  .main-nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+  }
+  .main-nav a:hover {
+    background-color: #495057;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    min-width: 200px;
+    z-index: 1;
+  }
+  .main-nav li:hover .dropdown {
+    display: block;
+  }
+  .dropdown a {
+    padding: 10px;
+  }
+</style>

@@ -1,0 +1,27 @@
+{
+  "name": "moises-auto-body-paint",
+  "version": "1.0.0",
+  "description": "A static site for Moises Auto Body & Paint showcasing services, gallery, and contact information.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [
+    "auto",
+    "body",
+    "paint",
+    "services",
+    "static",
+    "website"
+  ],
+  "author": "Moises Auto Body & Paint",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  }
+}

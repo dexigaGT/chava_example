@@ -1,0 +1,32 @@
+---
+layout: ../layouts/Layout.astro
+title: "Gallery - Moises Auto Body & Paint"
+---
+
+<section class="gallery">
+  <h1>Our Work</h1>
+  <p>Explore our gallery to see the quality of our auto body and paint services.</p>
+  <div class="gallery-grid">
+    <!-- Images will be added here later -->
+  </div>
+</section>
+
+<style>
+  .gallery {
+    padding: 2rem;
+    text-align: center;
+  }
+  .gallery h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .gallery p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+</style>
