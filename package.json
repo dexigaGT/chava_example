@@ -1,27 +1,25 @@
 {
   "name": "chava_example",
-  "version": "1.0.0",
-  "description": "A static site for chava_example.",
-  "main": "index.js",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [
-    "auto",
-    "body",
-    "paint",
-    "services",
-    "static",
-    "website"
-  ],
-  "author": "chava_example",
-  "license": "MIT",
   "dependencies": {
-    "astro": "^2.0.0"
-  },
-  "devDependencies": {
-    "typescript": "^4.0.0"
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/sitemap": "^3.6.1",
+    "@fontsource/inter": "^5.2.8",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.16.9",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18"
   }
 }
