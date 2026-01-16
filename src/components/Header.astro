@@ -13,23 +13,23 @@ const base = import.meta.env.BASE_URL;
     <ul>
       <li><a href={base}>Home</a></li>
       <li>
-        <a href={`${base}services`}>Services</a>
+        <a href={`${base}/services`}>Services</a>
         <ul class="dropdown">
-          <li><a href={`${base}services/paint-and-cosmetic/auto-painting`}>Auto Painting</a></li>
-          <li><a href={`${base}services/paint-and-cosmetic/car-detailing`}>Car Detailing</a></li>
-          <li><a href={`${base}services/paint-and-cosmetic/custom-paint`}>Custom Paint</a></li>
-          <li><a href={`${base}services/paint-and-cosmetic/dent-removal`}>Dent Removal</a></li>
-          <li><a href={`${base}services/paint-and-cosmetic/paintless-dent-removal`}>Paintless Dent Removal</a></li>
-          <li><a href={`${base}services/paint-and-cosmetic/rust-removal`}>Rust Removal</a></li>
-          <li><a href={`${base}services/collision-and-frame/bumper-repair`}>Bumper Repair</a></li>
-          <li><a href={`${base}services/collision-and-frame/collision-repair`}>Collision Repair</a></li>
-          <li><a href={`${base}services/collision-and-frame/frame-alignment`}>Frame Alignment</a></li>
-          <li><a href={`${base}services/collision-and-frame/frame-straightening`}>Frame Straightening</a></li>
+          <li><a href={`${base}/services/paint-and-cosmetic/auto-painting`}>Auto Painting</a></li>
+          <li><a href={`${base}/services/paint-and-cosmetic/car-detailing`}>Car Detailing</a></li>
+          <li><a href={`${base}/services/paint-and-cosmetic/custom-paint`}>Custom Paint</a></li>
+          <li><a href={`${base}/services/paint-and-cosmetic/dent-removal`}>Dent Removal</a></li>
+          <li><a href={`${base}/services/paint-and-cosmetic/paintless-dent-removal`}>Paintless Dent Removal</a></li>
+          <li><a href={`${base}/services/paint-and-cosmetic/rust-removal`}>Rust Removal</a></li>
+          <li><a href={`${base}/services/collision-and-frame/bumper-repair`}>Bumper Repair</a></li>
+          <li><a href={`${base}/services/collision-and-frame/collision-repair`}>Collision Repair</a></li>
+          <li><a href={`${base}/services/collision-and-frame/frame-alignment`}>Frame Alignment</a></li>
+          <li><a href={`${base}/services/collision-and-frame/frame-straightening`}>Frame Straightening</a></li>
         </ul>
       </li>
-      <li><a href={`${base}gallery`}>Gallery</a></li>
-      <li><a href={`${base}about`}>About</a></li>
-      <li><a href={`${base}contact`}>Contact</a></li>
+      <li><a href={`${base}/gallery`}>Gallery</a></li>
+      <li><a href={`${base}/about`}>About</a></li>
+      <li><a href={`${base}/contact`}>Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -66,16 +66,21 @@ const base = import.meta.env.BASE_URL;
     background-color: #495057;
   }
   .dropdown {
-    display: none;
+    display: none !important;
     position: absolute;
     background-color: #343a40;
     min-width: 200px;
     z-index: 1;
+    flex-direction: column;
   }
   .main-nav li:hover .dropdown {
+    display: block !important;
+  }
+  .dropdown li {
     display: block;
   }
   .dropdown a {
     padding: 10px;
+    white-space: nowrap;
   }
 </style>
